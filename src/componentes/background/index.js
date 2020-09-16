@@ -7,7 +7,7 @@ import './background.css'
 
 export default function Background(){
     const sendClick = () => {
-        toast.success("Salvo Com Sucesso")
+        alert("Salvo Com Sucesso")
     }
     return(
         <div>
@@ -21,8 +21,7 @@ export default function Background(){
                     <br />
                     <button onClick={sendClick}>Enviar</button>
                 </div>
-            </div> 
-            <ToastContainer />          
+            </div>        
         </div>
     )
 }
