@@ -2,11 +2,12 @@
 
 
 import React from 'react'
+import { toast , ToastContainer} from 'react-toastify'
 import './background.css'
 
 export default function Background(){
     const sendClick = () => {
-        alert("Salvo Com Sucesso")
+        toast.success("Salvo Com Sucesso")
     }
     return(
         <div>
@@ -20,7 +21,8 @@ export default function Background(){
                     <br />
                     <button onClick={sendClick}>Enviar</button>
                 </div>
-            </div>           
+            </div> 
+            <ToastContainer />          
         </div>
     )
 }
